@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.parabank.testComponents.Listener"></listener>
+	</listeners>
+	<test thread-count="5" name="Registration">
+		<parameter name="fName" value="Siddharth"></parameter>
+		<parameter name="lName" value="Gupta"></parameter>
+		<parameter name="street" value="Guido Gezellestraat"></parameter>
+		<parameter name="city" value="voorburg"></parameter>
+		<parameter name="state" value="voorburg"></parameter>
+		<parameter name="zip" value="2274 EX"></parameter>
+		<parameter name="phone" value="1234567"></parameter>
+		<parameter name="ssn" value="123"></parameter>
+		<parameter name="uName" value="sgupta"></parameter>
+		<parameter name="password" value="Test@123"></parameter>
+		<classes>
+			<class name="com.parabank.tests.RegistrationTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Login Failed">
+		<parameter name="uName" value=""></parameter>
+		<parameter name="password" value=""></parameter>
+		<classes>
+			<class name="com.parabank.tests.WebsiteLoginFailedTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Login Successful">
+		<parameter name="uName" value=""></parameter>
+		<parameter name="password" value=""></parameter>
+		<classes>
+			<class name="com.parabank.tests.WebsiteLoginSuccessfulTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
