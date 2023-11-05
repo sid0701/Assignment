@@ -14,7 +14,7 @@ public class WebsiteLoginFailedTest extends BaseTest {
 	public void loginFailed(String uName, String password) {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(uName, password);
-		Assert.assertEquals(lp.returnErrorMessage(), "Please enter a username and password.", "Error message matches");
+		Assert.assertEquals(lp.returnErrorMessage(), "Please enter a username and password.");
 	}
 
 }

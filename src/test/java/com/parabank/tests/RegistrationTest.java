@@ -23,7 +23,7 @@ public class RegistrationTest extends BaseTest {
 		LoginPage lp = new LoginPage(driver);
 		RegisterPage rp = lp.goToRegister();
 		HomePage hp = rp.registerPerson(fName, lName, street, city, state, zip, phone, ssn, uName+int_random, password);
-		Assert.assertEquals(hp.returnMessage(), "Your account was created successfully. You are now logged in.","Registration Successful");
+		Assert.assertEquals(hp.returnMessage(), "Your account was created successfully. You are now logged in.","Could not register the person");
 
 	}
 
