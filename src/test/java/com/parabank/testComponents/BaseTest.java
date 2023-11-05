@@ -21,32 +21,31 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class BaseTest {
 
 	protected WebDriver driver;
+	private static String browser;
+	private static String url;
 
 	public void setup() throws IOException {
 
-
-		String jsonContent = new String(Files.readAllBytes(
-				Paths.get(System.getProperty("user.dir") + "//src//test//java//com//parabank//resources//Data1.json")));
-		ObjectMapper objectMapper = new ObjectMapper();
-		List<Map<String, String>> data = objectMapper.readValue(jsonContent,
-				new TypeReference<List<Map<String, String>>>() {
-				});
-		HashMap<String, String> hm = (HashMap<String, String>) data.get(0);
-		String browser = hm.get("browser");
-		String url = hm.get("url");
-
+		if (browser == null && url == null) {
+			String jsonContent = new String(Files.readAllBytes(Paths
+					.get(System.getProperty("user.dir") + "//src//test//java//com//parabank//resources//Data1.json")));
+			ObjectMapper objectMapper = new ObjectMapper();
+			List<Map<String, String>> data = objectMapper.readValue(jsonContent,
+					new TypeReference<List<Map<String, String>>>() {
+					});
+			HashMap<String, String> hm = (HashMap<String, String>) data.get(0);
+			browser = hm.get("browser");
+			url = hm.get("url");
+		}
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
-		}
-
-		else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		}
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
-
 	}
 
 	@BeforeMethod(alwaysRun = true)
