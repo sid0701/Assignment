@@ -14,7 +14,7 @@ public class WebsiteLoginSuccessfulTest extends BaseTest {
 	public void loginSuccessful(String uName, String password) {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(uName, password);
-		Assert.assertEquals(lp.returnTitle(), "Accounts Overview");
+		Assert.assertEquals(lp.returnTitle(), "Accounts Overview","Logged into the account");
 	}
 
 }

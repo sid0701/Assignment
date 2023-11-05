@@ -7,14 +7,14 @@ import org.testng.annotations.Test;
 import com.parabank.pages.LoginPage;
 import com.parabank.testComponents.BaseTest;
 
-public class WebsiteLoginFailedTest extends BaseTest{
+public class WebsiteLoginFailedTest extends BaseTest {
 
 	@Test
 	@Parameters({ "uName", "password" })
 	public void loginFailed(String uName, String password) {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(uName, password);
-		Assert.assertEquals(lp.returnErrorMessage(), "Please enter a username and password.");
+		Assert.assertEquals(lp.returnErrorMessage(), "Please enter a username and password.", "Error message matches");
 	}
-	
+
 }

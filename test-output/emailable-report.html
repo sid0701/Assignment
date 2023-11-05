@@ -9,31 +9,31 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,273</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Login Failed</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,132</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Login Successful</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,880</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">27,285</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Login Successful</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,527</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,172</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Login Failed</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,042</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">31,741</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.parabank.tests.RegistrationTest</td><td><a href="#m0">register</a></td><td rowspan="1">1699186458207</td><td rowspan="1">1080</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Login Failed &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.tests.WebsiteLoginFailedTest</td><td><a href="#m1">loginFailed</a></td><td rowspan="1">1699186458443</td><td rowspan="1">482</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Login Successful &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.parabank.tests.WebsiteLoginSuccessfulTest</td><td><a href="#m2">loginSuccessful</a></td><td rowspan="1">1699186457886</td><td rowspan="1">471</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Successful &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.parabank.tests.WebsiteLoginSuccessfulTest</td><td><a href="#m0">loginSuccessful</a></td><td rowspan="1">1699189443500</td><td rowspan="1">717</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.parabank.tests.RegistrationTest</td><td><a href="#m1">register</a></td><td rowspan="1">1699189443512</td><td rowspan="1">2173</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Login Failed &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.tests.WebsiteLoginFailedTest</td><td><a href="#m2">loginFailed</a></td><td rowspan="1">1699189445670</td><td rowspan="1">1760</td></tr></tbody>
 </table>
-<h2>Registration</h2><h3 id="m0">com.parabank.tests.RegistrationTest#register</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Siddharth</td><td>Gupta</td><td>Guido Gezellestraat</td><td>voorburg</td><td>voorburg</td><td>2274 EX</td><td>1234567</td><td>123</td><td>sgupta</td><td>Test@123</td></tr><tr><th colspan="10">Exception</th></tr><tr><td colspan="10"><div class="stacktrace">java.lang.AssertionError: expected [Your account was created successfully. You are now logged in.] but found [An internal error has occurred and has been logged.]
-	at com.parabank.tests.RegistrationTest.register(RegistrationTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Login Failed</h2><h3 id="m1">com.parabank.tests.WebsiteLoginFailedTest#loginFailed</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Login Successful</h2><h3 id="m2">com.parabank.tests.WebsiteLoginSuccessfulTest#loginSuccessful</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td></td><td></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Accounts Overview] but found [Error!]
+<h2>Login Successful</h2><h3 id="m0">com.parabank.tests.WebsiteLoginSuccessfulTest#loginSuccessful</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td></td><td></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Logged into the account expected [Accounts Overview] but found [Error!]
 	at com.parabank.tests.WebsiteLoginSuccessfulTest.loginSuccessful(WebsiteLoginSuccessfulTest.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Registration</h2><h3 id="m1">com.parabank.tests.RegistrationTest#register</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Siddharth</td><td>Gupta</td><td>Guido Gezellestraat</td><td>voorburg</td><td>voorburg</td><td>2274 EX</td><td>1234567</td><td>123</td><td>sgupta</td><td>Test@123</td></tr><tr><th colspan="10">Exception</th></tr><tr><td colspan="10"><div class="stacktrace">java.lang.AssertionError: Registration Successful expected [Your account was created successfully. You are now logged in.] but found [An internal error has occurred and has been logged.]
+	at com.parabank.tests.RegistrationTest.register(RegistrationTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Failed</h2><h3 id="m2">com.parabank.tests.WebsiteLoginFailedTest#loginFailed</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
