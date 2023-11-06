@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 5, 2023 02:12:34 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 6, 2023 10:15:07 am</span></a>
 </li>
 </ul>
 </div>
@@ -80,14 +80,54 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginFailed</p>
+            <p class="text-sm">
+              <span>10:15:17 am</span> / <span>00:00:02:665</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginFailed</h5>
+<span class='badge badge-success'>11.06.2023 10:15:17 am</span>
+<span class='badge badge-danger'>11.06.2023 10:15:19 am</span>
+<span class='badge badge-default'>00:00:02:665</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:19 am</td>
+        <td>
+          Test Case Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">register</p>
             <p class="text-sm">
-              <span>2:12:42 pm</span> / <span>00:00:01:326</span>
+              <span>10:15:17 am</span> / <span>00:00:03:240</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -96,10 +136,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">register</h5>
-<span class='badge badge-success'>11.05.2023 2:12:42 pm</span>
-<span class='badge badge-danger'>11.05.2023 2:12:43 pm</span>
-<span class='badge badge-default'>00:00:01:326</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-success'>11.06.2023 10:15:17 am</span>
+<span class='badge badge-danger'>11.06.2023 10:15:20 am</span>
+<span class='badge badge-default'>00:00:03:240</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -114,9 +154,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:12:43 pm</td>
+        <td>10:15:20 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Registration Successful expected [Your account was created successfully. You are now logged in.] but found [An internal error has occurred and has been logged.]
+          <textarea readonly class="code-block">java.lang.AssertionError: Could not register the person expected [Your account was created successfully. You are now logged in.] but found [An internal error has occurred and has been logged.]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -154,46 +194,6 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">loginFailed</p>
-            <p class="text-sm">
-              <span>2:12:42 pm</span> / <span>00:00:00:426</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">loginFailed</h5>
-<span class='badge badge-success'>11.05.2023 2:12:42 pm</span>
-<span class='badge badge-danger'>11.05.2023 2:12:42 pm</span>
-<span class='badge badge-default'>00:00:00:426</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:12:42 pm</td>
-        <td>
-          Test Case Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
         <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
@@ -201,7 +201,7 @@
           <div class="test-detail">
             <p class="name">loginSuccessful</p>
             <p class="text-sm">
-              <span>2:12:45 pm</span> / <span>00:00:00:544</span>
+              <span>10:15:19 am</span> / <span>00:00:00:737</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -210,9 +210,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">loginSuccessful</h5>
-<span class='badge badge-success'>11.05.2023 2:12:45 pm</span>
-<span class='badge badge-danger'>11.05.2023 2:12:46 pm</span>
-<span class='badge badge-default'>00:00:00:544</span>
+<span class='badge badge-success'>11.06.2023 10:15:19 am</span>
+<span class='badge badge-danger'>11.06.2023 10:15:20 am</span>
+<span class='badge badge-default'>00:00:00:737</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -228,9 +228,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:12:46 pm</td>
+        <td>10:15:19 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Logged into the account expected [Accounts Overview] but found [Error!]
+          <textarea readonly class="code-block">java.lang.AssertionError: Cannot login into the account expected [Accounts Overview] but found [Error!]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -309,16 +309,16 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:12:42 pm</td>
+<td>10:15:19 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>register</a>
+<a href="#" class="linked" test-id='3' id='3'>loginSuccessful</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:12:45 pm</td>
+<td>10:15:17 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>loginSuccessful</a>
+<a href="#" class="linked" test-id='2' id='2'>register</a>
 </td>
 </tr>
 </tbody>
@@ -338,13 +338,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 5, 2023 02:12:34 pm</h3>
+<h3>Nov 6, 2023 10:15:07 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 5, 2023 02:12:47 pm</h3>
+<h3>Nov 6, 2023 10:15:22 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -414,7 +414,7 @@
 </div></div>
 <script>
 var timeline = {
-"register":1.326,"loginFailed":0.426,"loginSuccessful":0.544
+"loginFailed":2.665,"register":3.24,"loginSuccessful":0.737
 };
 </script>
 <div class="row">

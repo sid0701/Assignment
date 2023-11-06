@@ -4,6 +4,19 @@
   <listeners>
     <listener class-name="com.parabank.testComponents.Listener"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="Login Successful(failed)">
+    <parameter name="password" value=""/>
+    <parameter name="uName" value=""/>
+    <classes>
+      <class name="com.parabank.tests.WebsiteLoginSuccessfulTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="loginSuccessful" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.parabank.tests.WebsiteLoginSuccessfulTest -->
+    </classes>
+  </test> <!-- Login Successful(failed) -->
   <test thread-count="5" parallel="tests" name="Registration(failed)">
     <parameter name="zip" value="2274 EX"/>
     <parameter name="lName" value="Gupta"/>
@@ -19,23 +32,10 @@
       <class name="com.parabank.tests.RegistrationTest">
         <methods>
           <include name="launchApplication"/>
-          <include name="tearDown"/>
           <include name="register" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.parabank.tests.RegistrationTest -->
     </classes>
   </test> <!-- Registration(failed) -->
-  <test thread-count="5" parallel="tests" name="Login Successful(failed)">
-    <parameter name="password" value=""/>
-    <parameter name="uName" value=""/>
-    <classes>
-      <class name="com.parabank.tests.WebsiteLoginSuccessfulTest">
-        <methods>
-          <include name="launchApplication"/>
-          <include name="loginSuccessful" invocation-numbers="0"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.parabank.tests.WebsiteLoginSuccessfulTest -->
-    </classes>
-  </test> <!-- Login Successful(failed) -->
 </suite> <!-- Failed suite [Suite] -->
